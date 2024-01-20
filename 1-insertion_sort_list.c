@@ -36,8 +36,8 @@ temp->next = predecessor;
 predecessor->prev = temp;
 temp = predecessor->prev;
 predecessor = temp->prev;
-}
 print_list(*list);
+}
 current = current->next;
 }
 }
