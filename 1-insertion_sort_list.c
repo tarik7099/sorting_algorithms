@@ -18,7 +18,7 @@ temp = current;
 predecessor = temp->prev;
 while (predecessor != NULL && temp->n < predecessor->n)
 {
-if (temp->next != NULL)
+if (temp->next)
 temp->next->prev = predecessor;
 if (predecessor->prev != NULL)
 {
@@ -36,6 +36,6 @@ temp = predecessor->prev;
 predecessor = temp->prev;
 print_list(*list);
 }
-current = current->next;
+current = current->next;  
 }
 }
