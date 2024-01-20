@@ -19,7 +19,9 @@ predecessor = temp->prev;
 while (predecessor != NULL && temp->n < predecessor->n)
 {
 if (temp->next != NULL)
+{
 temp->next->prev = predecessor;
+}
 if (predecessor->prev != NULL)
 {
 predecessor->prev->next = temp;
