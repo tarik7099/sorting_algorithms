@@ -36,8 +36,8 @@ temp->next = predecessor;
 predecessor->prev = temp;
 temp = predecessor->prev;
 predecessor = temp->prev;
-print_list(*list);
 }
+print_list((const listint_t *)*list);
 current = current->next;
 }
 }
