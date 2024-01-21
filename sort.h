@@ -22,8 +22,8 @@ void print_list(const listint_t *list);
 void insertion_sort_list(listint_t **list);
 void swaping(listint_t **list, listint_t *current, listint_t *previous);
 void selection_sort(int *array, size_t size);
-size_t Lomuto(int *array, size_t lr, size_t ur, size_t size);
-void swap(int *array, size_t idx1, size_t idx2);
+int lomuto(int *array, ssize_t low, ssize_t high, size_t size);
+void swap(int *array, ssize_t idx1, ssize_t idx2);
 void quick_sort(int *array, size_t size);
-void qs(int *array, size_t lr, size_t up, size_t size);
+void qs(int *array, ssize_t low, ssize_t high, int size);
 #endif
