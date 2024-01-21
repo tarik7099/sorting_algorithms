@@ -39,7 +39,6 @@ size_t Lomuto(int *array, size_t lr, size_t ur, size_t size)
             if (start != end)
             {
                 swap(array, start, end);
-                print_array(array, size);
             }
             start++;
         }
