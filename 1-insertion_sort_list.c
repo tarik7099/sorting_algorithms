@@ -6,12 +6,12 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-listint_t *current = (*list)->next;
-listint_t *temp, *predecessor;
+listint_t *current = NULL, *temp = NULL, *predecessor = NULL;
 if (list == NULL || *list == NULL || (*list)->next == NULL)
 {
 return;
 }
+current = (*list)->next;
 while (current != NULL)
 {
 temp = current;
@@ -36,6 +36,6 @@ temp = predecessor->prev;
 predecessor = temp->prev;
 print_list(*list);
 }
-current = current->next;  
+current = current->next;
 }
 }
